@@ -2,10 +2,12 @@
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
         return None
-    for sub_matrix in matrix:
-        if len(sub_matrix) == 0:
+    else:
+        for sub in range(len(matrix)):
+            for i in range(len(matrix[sub])):
+                if i != len(matrix[sub]) - 1:
+                    endspace = ' '
+                else:
+                    endspace = ''
+                print("{:d}".format(matrix[sub][i]), end=endspace)
             print()
-        for i in range(len(sub_matrix)):
-            print("{:d}".format(sub_matrix[i]),
-                    end="\n" if i is
-                    len(sub_matrix) - 1 else " ")
