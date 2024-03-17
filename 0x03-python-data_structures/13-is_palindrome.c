@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * is_palind - check if palind or not
+ * is_palindrome - check if palind or not
  *
  * @head: head for list
  *
  * Return: 0 if it is not a palind
  * 1 if it is a palind
  */
-int is_palind(listint_t **head)
+int is_palindrome(listint_t **head)
 {
 	if (head == NULL || *head == NULL)
 		return (1);
@@ -20,6 +20,8 @@ int is_palind(listint_t **head)
  *
  * @head: head for list
  * @end: end for list
+ *
+ * Return: 0 if not palind and 1 if is palind
  */
 int aux_palind(listint_t **head, listint_t *end)
 {
