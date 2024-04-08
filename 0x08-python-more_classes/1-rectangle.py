@@ -6,7 +6,7 @@ Defining an empty rectangle
 
 class Rectangle:
     """Defines a rectangle"""
-    def __int__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Init the rectangle"""
         self.height = height
         self.width = width
