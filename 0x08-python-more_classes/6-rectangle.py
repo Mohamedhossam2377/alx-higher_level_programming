@@ -7,18 +7,18 @@ Defining an empty rectangle
 class Rectangle:
     """Defines a rectangle"""
 
-    number_of_instance = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Init the rectangle"""
         self.height = height
         self.width = width
-        Rectangle.number_of_instance += 1
+        Rectangle.number_of_instances += 1
 
     def __del__(self):
         """print message for every deletion of rectangle"""
         print("Bye rectangle...")
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
