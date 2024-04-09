@@ -103,4 +103,4 @@ class Rectangle:
         Returns:
             class
         '''
-        return cls(size, size)
+        return (cls(size, size))
