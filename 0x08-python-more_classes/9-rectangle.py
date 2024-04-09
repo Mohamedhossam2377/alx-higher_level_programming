@@ -99,5 +99,8 @@ class Rectangle:
 
         Args:
             size: size of new square
+
+        Returns:
+            class
         """
         return cls(size, size)
