@@ -25,6 +25,7 @@ def printer():
         if value > 0:
             print('{:s}: {:d}'.format(key, value))
 
+
 try:
     for line in stdin:
         splitted_line = line.split()
